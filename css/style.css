@@ -1,0 +1,40 @@
+
+
+
+.navbar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgb(6, 114, 48);
+  top:0; left:0; right: 0;
+  height: 20px;
+ 
+
+}
+.navbar ul{
+display: flex;
+list-style: none;
+margin: 3px 0px;
+color: white;
+}
+.navbar ul li{
+  font-family: Noto Serif Display;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+ 
+}
+
+.navbar ul li a{
+  color:beige ;
+  padding: 5px;
+
+}
+
+.navbar ul li a:hover{
+  background-color: white;
+  color:rgb(6, 114, 48);
+
+}
