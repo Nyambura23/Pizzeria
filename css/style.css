@@ -1,6 +1,13 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Noto Serif Display;
+}
 
+html
 
-
+/*Header Section*/
 .navbar{
   position: fixed;
   display: flex;
@@ -36,5 +43,34 @@ color: white;
 .navbar ul li a:hover{
   background-color: white;
   color:rgb(6, 114, 48);
+
+}
+
+/*Home Section*/
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url(../images/pizza03.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+
+}
+
+.home h1{
+  color: white;
+  text-align: center;
+
+}
+
+.home p{
+  color: white;
+  text-align: center;
+
 
 }
