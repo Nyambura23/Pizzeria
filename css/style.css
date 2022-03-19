@@ -92,7 +92,7 @@ color: white;
 }
 
 /*About Section*/
-/* #about{
+/* about{
   background: color rgb(238, 90, 36);
 } */
 
@@ -139,7 +139,7 @@ color: white;
   
 }
 
-.products{
+#order{
 background:url(../images/pizza03.webp);
 background-size: cover;
 background-image: center;
@@ -147,23 +147,25 @@ height: 300vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+/* align-items: center; */
 text-align: center;
 padding: 0px;
 margin: 0px;
 color: white;
 }
-.products h3{
-  padding: 0px;
+.order h3{
+  padding-top: 0px;
+  margin: 0px;
 }
 
-.col-md-6 col-sm-12{
+.col-md{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 0px;
   margin: 0px;
+  width: 120px;
 }
 
 .text-center{
@@ -175,43 +177,6 @@ color: white;
 .table{
   color: white;
 }
-/* .about .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap:1.5rem;
-}
-
-.about .box-container .box{
-  padding:3rem 2rem;
-  background: #fff;
-  outline: var(--outline);
-  outline-offset: -1rem;
-  text-align: center;
-  box-shadow: var(--box-shadow);
-}
-.about .box-container .box:hover{
-  outline: var(--outline-hover);
-  outline-offset: 0rem;
-}
-.about .box-container .box img{
-  margin:1rem 0;
-  height: 10rem;
-}
-
-.about h2{
-  text-align: center;
-}
-
-.about .box-container .box h3{
-  font-size: 20px;
- 
-}
-
-
-.about .box-container .box p{
- line-height:15px;
-} */
-
 
 /*Footer Section*/
 
@@ -225,7 +190,7 @@ color: white;
 .contact{
 font-size: 15px;
 padding: 0px;
-margin: 2px;
+margin: 0px;
 line-height: 1px;
 
 }
