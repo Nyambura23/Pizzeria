@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  let elements=[1,2]
+  let elements=[1,2,3]
 
   elements.forEach((index)=>{
     $('.content'+index).hover(function(){
