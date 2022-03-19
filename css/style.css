@@ -52,7 +52,8 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  background:url(../images/pizza03.webp);
+  
+  background-image:url(../images/serve.avif);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -92,11 +93,12 @@ color: white;
     display: flex;
     flex-direction: column;
     height: 150px;
-    width: 200px;
+    width: 150px;
     align-items: center;
     text-align: center;
     padding: 5px;
     margin: 12px;
+    /* align-self: stretch; */
   
 
 }
@@ -119,7 +121,8 @@ color: white;
 }
 
 .products{
-background-image:url(../images/serve.avif);
+  background:url(../images/pizza03.webp);
+
 background-size: cover;
 background-image: center;
 height: 120vh;
@@ -132,7 +135,9 @@ padding: 0px;
 margin: 0px;
 color: white;
 }
-
+.products h3{
+  padding: 0px;
+}
 
 
 /* .about .box-container{
