@@ -56,4 +56,6 @@ $(document).ready(function(){
 
       var newPizza = new Pizza(crust, size, toppings, total, order);
 
+      var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".crust option:selected").text() + " - " + newPizza.crust + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' +  '</td><td id="total">' + newPizza.total + '</td></tr>'
+
 })
