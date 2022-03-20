@@ -22,10 +22,36 @@ $(document).ready(function(){
   $(".additional-info h4").hide();
 
   $('.btn.order').click(function() {
-    var crustOfPizza = $(".crust option:selected").val();
-    var sizeOfPizza = $(".size option:selected").val();
-    var toppingsOfPizza = $(".toppings option:selected").val();
-    var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+    var crust = $(".crust option:selected").val();
+    var size = $(".size option:selected").val();
+    var toppings = $(".toppings option:selected").val();
+    var total = parseInt(crust) + parseInt(size) + parseInt(toppings);
     var order = 1;
     var grandTotal = 0;
+
+    $("table").show();
+    $(".additional-buttons").show();
+    $(".btn.order").hide();
+
+    $("#crust").html($(".crust option:selected").text() + " - " + crust);
+    $("#size").html($(".size option:selected").text() + " - " + size);
+    $("#toppings").html($(".toppings option:selected").text() + " - " + toppings);
+    $("#total").html(total);
+
+    function Pizza(size, toppings, crust, total, orderNo) {
+      this.crust = crust;
+      this.size = size;
+      this.toppings = toppings;
+      this.total = total;
+      this.orderNo = orderNo;
+    }
+
+    $('.btn.add-pizza').click(function() {
+      var crust = $(".crust option:selected").val();
+      var size = $(".size option:selected").val();
+      var toppings = $(".toppings option:selected").val();
+      var total = + parseInt(crust) + parseInt(size) + parseInt(toppings);
+      order = order + 1;
+      grandTotal = grandTotal + total;
+
 })
