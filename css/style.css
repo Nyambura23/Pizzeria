@@ -154,7 +154,7 @@ color: white;
 background:url(../images/pizza03.webp);
 background-size: cover;
 background-image: center;
-height: 200vh;
+height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -215,13 +215,13 @@ color: white;
 
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
 body{
   font-size: 2.0rem;
-}
+} */
 
-}
+/* } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* @media only screen and (min-width: 600px) {
