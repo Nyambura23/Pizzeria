@@ -95,7 +95,8 @@ color: white;
 /*About Section*/
 #about{
   background:white;
-  height: 100vh;
+ padding-top: 0px;
+ margin-top: 0px;
 }
 
 .about h2{
@@ -146,7 +147,7 @@ color: white;
 background:url(../images/pizza03.webp);
 background-size: cover;
 background-image: center;
-height: 300vh;
+height: 175vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -202,4 +203,5 @@ line-height: 1px;
 color: white;
 
 }
+
 

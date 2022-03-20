@@ -12,6 +12,9 @@
 </head>
 <body>
 
+<!-- <div class="container-fluid"> -->
+
+
   <header class="header">
     <nav class="navbar">
       <ul>
@@ -64,7 +67,8 @@
   
       </section>
 
-
+<br>
+<br>
 
       
 <section class="order" id="order">
@@ -72,17 +76,44 @@
   <p>Part of what makes us special is the fact that we allow you to make your own pizza!</p>            </div>
 
   <div class="row g-2">
+    <div class="col-md">
+
+      <h>Crust</h>
+        <select class="form-control crust">
+          <option label="Thin" value="300">Thin</option>
+          <option label="Thick" value="500">Thick</option>
+          <option label="Stuffed" value="700">Stuffed</option>
+        </select>
+        </div>
+    
+    <div class="col-md">
+      <h>Size</h>
+       <select class="form-control size">
+       <option label="Small" value="500">Small</option>
+       <option label="Medium" value="700">Medium</option>
+       <option label="Large" value="1000">Large</option>
+      </select>
+    </div>
 
     <div class="col-md">
+      <h>Toppings</h>
+       <select class="form-control toppings">
+        <option label="Vegan-friendly" value="250">Vegan-friendly</option>
+        <option label="Meat-lover" value="500">Meat-lover</option>
+        <option label="Mega-Bonanza" value="1000">Mega-Bonanza</option>
+      </select>
+    </div>
+
+    <!-- <div class="col-md">
       <div class="form-floating">
         <h>Crust</h>
         <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-          <option label="Thin" value="300">Thin</option>
-      <option label="Thick" value="500">Thick</option>
-      <option label="Stuffed" value="700">Stuffed</option>
-        </select>
+         <option label="Thin" value="300">Thin</option>
+         <option label="Thick" value="500">Thick</option>
+         <option label="Stuffed" value="700">Stuffed</option>
+        </select> -->
         <!-- <label for="floatingSelectGrid">Toppings</label> -->
-      </div>
+      <!-- </div>
     </div>
 
     <div class="col-md">
@@ -92,9 +123,9 @@
           <option label="Small" value="500">Small</option>
           <option label="Medium" value="700">Medium</option>
           <option label="Large" value="1000">Large</option>
-        </select>
+        </select> -->
         <!-- <label for="floatingSelectGrid">Size</label> -->
-      </div>
+      <!-- </div>
     </div>
 
     <div class="col-md">
@@ -104,7 +135,7 @@
           <option label="Vegan-friendly" value="250">Vegan-friendly</option>
           <option label="Meat-lover" value="500">Meat-lover</option>
           <option label="Mega-Bonanza" value="1000">Mega-Bonanza</option>
-        </select>
+        </select> -->
         <!-- <label for="floatingSelectGrid">Toppings</label> -->
       </div>
     </div>
@@ -137,12 +168,13 @@
 </table>
 
 <div class="additional-buttons">
-  <div class="button2">
+  <div class="text-center">
     <button class="btn btn-info add-pizza" type="submit">One more? </button>
     <div class="additional-info">
-      <h>Your total sum: <span></span></h><br>
-      <h4>Hang on tight! Awesomeness is heading your way shortly...<span></span></h4>
-      <h>Want it delivered for just 200?</h>
+     <h>Your total sum: <span></span></h><br> 
+     <h4>Want it delivered for just 200?</h4>
+     <h6>Hang on tight! Awesomeness is shortly headed to...<span></span></h6>
+    
       <div class="location text-center">
         <input type="text" size="30" placeholder="Type your location here" required />
         <button class="btn btn-info complete" type="submit">Complete</button>
@@ -181,6 +213,9 @@
   </div>
 </section>
 
+
+<!-- </div> -->
+
 <script
 src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -193,5 +228,6 @@ crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
 <script src="js/script.js" ></script>
+
 </body>
 </html>
