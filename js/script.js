@@ -21,4 +21,11 @@ $(document).ready(function(){
   $(".btn.no").hide();
   $(".additional-info h4").hide();
 
+  $('.btn.order').click(function() {
+    var crustOfPizza = $(".crust option:selected").val();
+    var sizeOfPizza = $(".size option:selected").val();
+    var toppingsOfPizza = $(".toppings option:selected").val();
+    var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+    var order = 1;
+    var grandTotal = 0;
 })
