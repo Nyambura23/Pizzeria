@@ -15,6 +15,7 @@ html
   align-items: center;
   justify-content: space-between;
   background-color:rgb(6, 114, 48);
+  /* background-color: rgb(238, 90, 36); */
   top:0; left:0; right: 0;
   height: 25px;
  
@@ -43,7 +44,7 @@ color: white;
 .navbar ul li a:hover{
   background-color: white;
   color:rgb(6, 114, 48);
-
+  /* color: rgb(238, 90, 36); */
 }
 
 /*Home Section*/
@@ -92,12 +93,14 @@ color: white;
 }
 
 /*About Section*/
-/* about{
-  background: color rgb(238, 90, 36);
-} */
+#about{
+  background:white;
+  height: 100vh;
+}
 
 .about h2{
   text-align: center;
+  color: white;
 }
 
 .row{
@@ -178,6 +181,10 @@ color: white;
   color: white;
 }
 
+/* .btn-info add-pizza{
+  color: rgb(238, 90, 36);
+} */
+
 /*Footer Section*/
 
 .contact{
@@ -192,6 +199,7 @@ font-size: 15px;
 padding: 0px;
 margin: 0px;
 line-height: 1px;
+color: white;
 
 }
 
