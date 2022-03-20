@@ -54,4 +54,6 @@ $(document).ready(function(){
       order = order + 1;
       grandTotal = grandTotal + total;
 
+      var newPizza = new Pizza(crust, size, toppings, total, order);
+
 })
