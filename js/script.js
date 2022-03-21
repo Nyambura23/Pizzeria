@@ -14,6 +14,17 @@ $(document).ready(function(){
   });
 
 
+  // let toppingsPrice ={
+  //   "Vegan-friendly": 250,
+  //   "Meat-lover": 500,
+  //   "Mega-bonanza": 1000,
+  //   Bacon:200,
+  //   Mushroom: 150,
+  //   Pepperoni:250,
+  //   Cheese:300,
+
+  // }
+
   $("table").hide();
   $(".additional-buttons").hide();
   $(".additional-info").hide();
@@ -24,8 +35,16 @@ $(document).ready(function(){
   $('.btn.order').click(function() {
     var crust = $(".crust option:selected").val();
     var size = $(".size option:selected").val();
-    var toppings = $(".toppings option:selected").val();
-    var total = parseInt(crust) + parseInt(size) + parseInt(toppings);
+    var toppings = []
+    $.each($("input[name='toppings']:checked"),function(){
+    toppings.push(parseInt($(this).val()))
+    })
+   
+    console.log(toppings)
+
+    var toppingsSum = toppingsTotal(toppings)
+    console.log(toppingsSum);
+    var total = parseInt(crust) + parseInt(size) + toppingsSum;
     var order = 1;
     var grandTotal = 0;
 
@@ -37,7 +56,7 @@ $(document).ready(function(){
 
     $("#crust").html($(".crust option:selected").text() + " - " + crust);
     $("#size").html($(".size option:selected").text() + " - " + size);
-    $("#toppings").html($(".toppings option:selected").text() + " - " + toppings);
+    $("#toppings").html($(".toppings option:checked").text() + " - " + toppings);
     $("#total").html(total);
 
 
@@ -48,6 +67,13 @@ $(document).ready(function(){
       this.toppings = toppings;
       this.total = total;
       this.orderNo = orderNo;
+     
+    }
+
+    function toppingsTotal(arr){
+      let total=0;
+      total+=arr.reduce((x,y)=> x + y)
+      return total
     }
 
     $('.btn.add-pizza').click(function() {
@@ -76,6 +102,7 @@ $(document).ready(function(){
       $(".btn.yes").show();
       $(".btn.no").show();
       $(".additional-info .location").hide();
+      $(".additional-info p").hide();
       grandTotal = grandTotal + total;
 
       $(".additional-info h span").html(grandTotal);
@@ -93,7 +120,7 @@ $(document).ready(function(){
       $(".additional-info h4").hide();
       $(".btn.yes").hide();
       $(".btn.no").hide();
-      $(".additional-info .location").show();
+      $(".additional-info p").show();
     });
 
     $(".btn.complete").click(function() {

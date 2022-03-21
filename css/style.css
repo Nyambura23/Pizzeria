@@ -18,8 +18,8 @@ html
   justify-content: space-between;
   background-color:rgb(6, 114, 48);
   /* background-color: rgb(238, 90, 36); */
-  top:0; left:0; right: 0;
-  height: 25px;
+  top:0; left:0; right: 0; bottom: 0;
+  height: 30px;
  
 
 }
@@ -28,10 +28,11 @@ display: flex;
 list-style: none;
 margin: 0px 0px;
 color: white;
+align-items: center;
 }
 .navbar ul li{
   font-family: Noto Serif Display;
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   font-weight: bold;
  
@@ -99,9 +100,10 @@ color: white;
 
 /*About Section*/
 #about{
-  background:white;
- padding-top: 0px;
- margin-top: 0px;
+background:rgb(240, 85, 28);
+padding-top: 0px;
+margin-top: 0px;
+height: 80vh;
 }
 
 .about h2{
@@ -119,18 +121,20 @@ color: white;
 .col-md-4{
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 70px;
   width: 160px; 
   align-items: center;
   text-align: center;
-  padding: 5px;
-  margin: 12px;
+  padding: 2px;
+  margin: 7px;
+  color: white;
   
 
 }
 .img-fluid{
   height: 100px;
   width: 100px;
+  
 }
 
 .hidden-content1{
@@ -150,11 +154,15 @@ color: white;
   
 }
 
+.about p{
+  color: white;
+}
+
 #order{
 background:url(../images/pizza03.webp);
 background-size: cover;
 background-image: center;
-height: 100vh;
+height: 200vh;
 display: flex;
 flex-direction: column;
 justify-content: center;

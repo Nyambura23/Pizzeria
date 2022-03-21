@@ -43,13 +43,14 @@
   
           
             <!-- <div class="hidden-content2 col-md-4" >
-              <div id="fresh">
-                <h>Straight outta the pan</h> 
-                <p>Part of what makes us special is the fact that we allow you to make your own pizza!</p>            </div>
+              <div id="fresh"> -->
+                <!-- <h>Straight outta the pan</h>  -->
+                <!-- <p>Have it exactly as you like it!</p>            
+              </div>
             </div>
               <div class="content2 col-md-4">
                 <img src="./images/p.webp"  alt="pizza in a pan" class="img-fluid">
-                <p>Have it as you like it</p>
+                <p>You get to add as much of everything as you like</p>
             
             </div> -->
   
@@ -64,11 +65,9 @@
                 <p>Speedy delivery</p>
                 
             </div>
-  
+        </div>
       </section>
 
-<br>
-<br>
 
       
 <section class="order" id="order">
@@ -94,16 +93,60 @@
        <option label="Large" value="1000">Large</option>
       </select>
     </div>
+ 
 
-    <div class="col-md">
+    <!-- <div class="col-md">
       <h>Toppings</h>
        <select class="form-control toppings">
         <option label="Vegan-friendly" value="250">Vegan-friendly</option>
         <option label="Meat-lover" value="500">Meat-lover</option>
         <option label="Mega-Bonanza" value="1000">Mega-Bonanza</option>
       </select>
-    </div>
+    </div> -->
 
+    <h>Toppings</h>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="250" id="flexCheckDefault" name="toppings">
+      <label class="form-check-label" for="flexCheckDefault">
+        Vegan-friendly
+      </label>
+    </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="500" id="flexCheckDefault" name="toppings">
+        <label class="form-check-label" for="flexCheckDefault">
+          Meat-lover
+        </label>
+      </div>
+      <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="1000" id="flexCheckDefault" name="toppings">
+          <label class="form-check-label" for="flexCheckDefault">
+            Mega-Bonanza
+          </label>
+        </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="200" id="flexCheckDefault" name="toppings">
+      <label class="form-check-label" for="flexCheckDefault">
+        Bacon
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="150" id="flexCheckDefault" name="toppings">
+      <label class="form-check-label" for="flexCheckDefault">
+        Mushroom
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="250" id="flexCheckDefault" name="toppings">
+      <label class="form-check-label" for="flexCheckDefault">
+        Pepperoni
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="300" id="flexCheckChecked" name="toppings">
+      <label class="form-check-label" for="flexCheckChecked">
+        Cheese
+      </label>
+    </div>
     <!-- <div class="col-md">
       <div class="form-floating">
         <h>Crust</h>
@@ -167,6 +210,8 @@
 </tbody>
 </table>
 
+
+
 <div class="additional-buttons">
   <div class="text-center">
     <button class="btn btn-info add-pizza" type="submit">One more? </button>
@@ -174,6 +219,7 @@
      <h>Your total sum: <span></span></h><br> 
      <h4>Want it delivered for just 200?</h4>
      <h6>Hang on tight! Awesomeness is shortly headed to...<span></span></h6>
+     <p>Your order is ready for pickup!</p>
     
       <div class="location text-center">
         <input type="text" size="30" placeholder="Type your location here" required />
