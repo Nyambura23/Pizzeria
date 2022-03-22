@@ -15,9 +15,7 @@ html
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-color:rgb(6, 114, 48);
-  /* background-color: rgb(238, 90, 36); */
   top:0; left:0; right: 0; bottom: 0;
   height: 30px;
  
@@ -35,12 +33,14 @@ align-items: center;
   font-size: 15px;
   color: white;
   font-weight: bold;
+
  
 }
 
 .navbar ul li a{
   color:beige ;
   padding: 5px;
+  text-decoration: none;
 
 }
 
@@ -101,59 +101,54 @@ align-items: center;
 /*About Section*/
 #about{
 background:rgb(240, 85, 28);
-padding-top: 0px;
+padding-top: 20px;
 margin-top: 0px;
-height: 80vh;
+font-size: 20px;
+
 }
 
+.about-container{
+  text-align: center;
+
+}
 .about h2{
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  padding: 10px;
 }
 
-.row{
+.about-container{
   display: flex;
-  justify-content: space-around;
-  box-sizing:border-box ; 
-} 
-
-.col-md-4{
-  display: flex;
-  flex-direction: column;
-  height: 70px;
-  width: 160px; 
-  align-items: center;
-  text-align: center;
-  padding: 2px;
-  margin: 7px;
-  color: white;
-  
-
+  flex: 1;
 }
+
 .img-fluid{
-  height: 100px;
-  width: 100px;
-  
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+    
 }
 
 .hidden-content1{
   display: none;
+  font-size: 25px;
 }
 .hidden-content2{
   display: none;
+  font-size: 25px;
 }
 .hidden-content3{
   display: none;
+  font-size: 25px;
 }
 
-.about h{
+/* .about h{
   font-size: 20px;
   font-weight: bold;
   font-size: 30px;
   
-}
-
+} */
 .about p{
   color: white;
 }
@@ -161,46 +156,40 @@ height: 80vh;
 #order{
 background:url(../images/pizza03.webp);
 background-size: cover;
-background-image: center;
-height: 200vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
-/* align-items: center; */
 text-align: center;
-padding: 0px;
-margin: 0px;
 color: white;
 
 }
 .order h3{
-  padding-top: 0px;
-  margin: 0px;
+  font-size: 40px;
+  padding: 10px;
 }
 
-.col-md{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-  width: 120px;
+.order p{
+  font-size: 25px;
 }
 
-.text-center{
-  padding: 5px;
-  margin: 5px;
+.btn-order{
+  margin-top: 10px;
 }
+
 
 
 .table{
   color: white;
+  background-color: rgb(240, 85, 28);
+  font-size: 25px;
 }
 
-/* .btn-info add-pizza{
-  color: rgb(238, 90, 36);
-} */
+.additional-info{
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+
 
 /*Footer Section*/
 
@@ -208,47 +197,19 @@ color: white;
   background:rgb(6, 114, 48); 
   align-items: center;
   text-align: center;
-
- 
+  font-size: 25px;
+  padding: 0px;
+  margin: px;
+  line-height: 5px;
+  color: white;
+   
 }
 
-.contact{
-font-size: 15px;
-padding: 0px;
-margin: 0px;
-line-height: 3px;
-color: white;
-
+.contact h5{
+  font-size: 30px;
+  Padding:10px 0;
 }
 
-
-
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {
-body{
-  font-size: 2.0rem;
-} */
-
-/* } */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  body{
-    font-size: 3rem;
-  }
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-  
-} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-  
-} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-  
-} */
+.socials{
+  padding: 10px;
+}

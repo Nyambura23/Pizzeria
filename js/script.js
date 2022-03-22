@@ -11,8 +11,8 @@ $(document).ready(function(){
     });
   });
 
-  $("table").hide();
-  $(".additional-buttons").hide();
+ $("table").hide();
+ $(".additional-buttons").hide();
  $(".additional-info").hide();
  $(".btn.yes").hide();
  $(".btn.no").hide();
