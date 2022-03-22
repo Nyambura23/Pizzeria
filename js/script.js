@@ -18,7 +18,7 @@ $(document).ready(function(){
  $(".btn.no").hide();
  $(".additional-info h6").hide();
 
-$('.btn.order').click(function() {
+$('.btn.order ').click(function() {
   var crust = $(".crust option:selected").val();
   var size = $(".size option:selected").val();
   var toppings = $(".toppings option:selected").val();

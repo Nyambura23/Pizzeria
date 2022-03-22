@@ -184,11 +184,12 @@ color: white;
   font-size: 25px;
 }
 
-.additional-info{
+.additional-info, .additional-info h4, .additional-info h6, .additional-info h {
   font-size: 25px;
   font-weight: 600;
   
 }
+
 
 
 /*Footer Section*/
